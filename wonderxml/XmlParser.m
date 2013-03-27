@@ -192,7 +192,19 @@ static const char* getPropertyType(objc_property_t property) {
 				
 				NSLog(@"anElement :: %@",anElement.stringValue);
 				
-				if ([[propertyDic objectForKey:key] isEqualToString:nsNumberType]) {
+                if ([[propertyDic objectForKey:key] isEqualToString:nsMutableArrayType]) {
+					
+                    if(anElement.childCount>0)
+                    {
+                        NSString *objStr = ((GDataXMLElement *)[anElement.children objectAtIndex:0]).name;
+                        NSLog(@"Array %@",objStr);
+                        
+                        id newObj = [[[NSClassFromString(objStr) alloc] init] autorelease];
+                        NSMutableArray *aux = [self fromXml:anElement.XMLString withObject:newObj];
+                        [createdObject setValue:aux forKey:key];
+                    }
+                }
+				else if ([[propertyDic objectForKey:key] isEqualToString:nsNumberType]) {
 					
 					NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
 					[f setNumberStyle:NSNumberFormatterDecimalStyle];

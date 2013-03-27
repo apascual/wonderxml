@@ -18,3 +18,5 @@ NSString * const booleanType = @"C";
 //NSString * const intType = @"i";
 
 NSString * const nsNumberType = @"NSNumber";
+
+NSString * const nsMutableArrayType = @"NSMutableArray";

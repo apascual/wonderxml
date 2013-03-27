@@ -17,3 +17,5 @@ extern NSString * const booleanType;
 //extern NSString * const intType;
 
 extern NSString * const nsNumberType;
+
+extern NSString * const nsMutableArrayType;

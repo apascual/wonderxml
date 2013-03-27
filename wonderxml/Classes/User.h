@@ -9,23 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface User : NSObject {
-	
-	@protected
-	NSString *billingEmailAddress;
-    NSString *billingSchedule;
-    NSString *brandID;
-    Boolean changePassword;
-    NSString *expiration;
-    NSString *lastAddress;
-    NSString *lastLogIn;
-    NSString *password;
-    NSString *preferences;
-    NSNumber *profileID;
-    NSString *settings;
-    NSNumber *userID;
-    NSString *username;
-}
+@interface User : NSObject
 
 @property (nonatomic, assign) Boolean changePassword;
 @property (nonatomic, copy) NSString *expiration;
@@ -41,7 +25,7 @@
 @property (nonatomic, copy) NSString *brandID;
 @property (nonatomic, copy) NSString *billingEmailAddress;
 
-
+@property (nonatomic, copy) NSMutableArray *permissions;
 
 
 @end

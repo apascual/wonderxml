@@ -21,6 +21,7 @@
 		BB7D9CA411B4874A00D0D7BC /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D9CA011B4874A00D0D7BC /* Util.m */; };
 		BB7D9CD911B488BE00D0D7BC /* XmlHeaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D9CD811B488BE00D0D7BC /* XmlHeaderHelper.m */; };
 		BB7D9CEA11B4892F00D0D7BC /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D9CE911B4892F00D0D7BC /* User.m */; };
+		E99E30F317031AB50094E105 /* Permission.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E30F217031AB50094E105 /* Permission.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		BB7D9CD811B488BE00D0D7BC /* XmlHeaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlHeaderHelper.m; sourceTree = "<group>"; };
 		BB7D9CE811B4892F00D0D7BC /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		BB7D9CE911B4892F00D0D7BC /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E99E30F117031AB50094E105 /* Permission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Permission.h; sourceTree = "<group>"; };
+		E99E30F217031AB50094E105 /* Permission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Permission.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 			children = (
 				BB7D9CE811B4892F00D0D7BC /* User.h */,
 				BB7D9CE911B4892F00D0D7BC /* User.m */,
+				E99E30F117031AB50094E105 /* Permission.h */,
+				E99E30F217031AB50094E105 /* Permission.m */,
 				1D3623240D0F684500981E51 /* WonderXMLAppDelegate.h */,
 				1D3623250D0F684500981E51 /* WonderXMLAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* WonderXMLViewController.h */,
@@ -173,7 +178,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WonderXML" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +218,7 @@
 				BB7D9CA411B4874A00D0D7BC /* Util.m in Sources */,
 				BB7D9CD911B488BE00D0D7BC /* XmlHeaderHelper.m in Sources */,
 				BB7D9CEA11B4892F00D0D7BC /* User.m in Sources */,
+				E99E30F317031AB50094E105 /* Permission.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
